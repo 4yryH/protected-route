@@ -25,7 +25,7 @@ function App() {
         {
           path: "profile",
           element: (
-            <ProtectedRoute isAuth={user === "user"}>
+            <ProtectedRoute isAuth={user === "user" || user === "admin"}>
               <Profile />
             </ProtectedRoute>
           ),
