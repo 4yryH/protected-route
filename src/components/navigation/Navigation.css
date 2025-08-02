@@ -23,8 +23,17 @@ nav {
 
 .user-menu-wrapper {
   display: flex;
+  align-items: center;
   gap: 10px;
   background-color: #3b3b3b;
   padding: 10px;
   border-radius: 10px;
+}
+
+.user-menu-wrapper p {
+  margin: 0;
+}
+
+.user-menu-wrapper button {
+  padding: 5px;
 }

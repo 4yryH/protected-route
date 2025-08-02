@@ -32,15 +32,19 @@ export const Navigation = ({ user, onLogout }) => {
           Профиль
         </NavLink>
 
-        <NavLink
-          to="/admin"
-          end
-          className={({ isActive }) =>
-            isActive ? "nav-link active" : "nav-link"
-          }
-        >
-          Админ
-        </NavLink>
+        {user === "admin" ? (
+          <NavLink
+            to="/admin"
+            end
+            className={({ isActive }) =>
+              isActive ? "nav-link active" : "nav-link"
+            }
+          >
+            Админ
+          </NavLink>
+        ) : (
+          <></>
+        )}
 
         <NavLink
           to="/login"
